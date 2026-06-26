@@ -1,0 +1,18 @@
+# Safety Helmet Detection - Dataset Configuration
+# Dataset: Safety Helmet Detection (Roboflow Universe)
+# Source: https://universe.roboflow.com
+# Classes: helmet, no-helmet
+# Format: YOLOv8
+
+path: ./dataset        # Root directory of the dataset
+train: train/images    # Path to training images (relative to path)
+val: valid/images      # Path to validation images (relative to path)
+test: test/images      # Path to test images (relative to path)
+
+# Number of classes
+nc: 2
+
+# Class names (order must match label indices)
+names:
+  0: helmet
+  1: no-helmet
